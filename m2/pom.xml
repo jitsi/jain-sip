@@ -12,6 +12,13 @@
 	<description>JAIN SIP Parent pom</description>
 	<url>http://code.google.com/p/jain-sip/</url>
 
+	<parent>
+		<groupId>org.jitsi</groupId>
+		<artifactId>jitsi-universe</artifactId>
+		<version>1.0-SNAPSHOT</version>
+		<relativePath>../../jitsi-universe/pom.xml</relativePath>
+	</parent>
+
 	<developers>
 		<developer>
 			<id>jean.deruelle</id>
@@ -62,8 +69,6 @@
 	</modules>
 
 	<properties>
-		<maven.compiler.source>1.5</maven.compiler.source>
-		<maven.compiler.target>1.5</maven.compiler.target>
 		<project.build.sourceEncoding>ISO-8859-1</project.build.sourceEncoding>
 	</properties>
 
@@ -148,7 +153,6 @@
 				<plugin>
 					<groupId>org.apache.maven.plugins</groupId>
 					<artifactId>maven-compiler-plugin</artifactId>
-					<version>2.3.2</version>
 					<configuration>
 						<excludes>
 							<!-- Depending on the version of maven-compiler-plugin in use, the presence of non-SOURCE type files in the source directory may or may not be a problem i.e. lead to compilation errors. -->
@@ -159,14 +163,12 @@
 				<plugin>
 					<groupId>org.apache.maven.plugins</groupId>
 					<artifactId>maven-jar-plugin</artifactId>
-					<version>2.4</version>
 				</plugin>
 			</plugins>
 		</pluginManagement>
 		<plugins>	
 			<plugin>
 		  		<artifactId>maven-release-plugin</artifactId>
-				<version>2.2.2</version>		  		
 			</plugin>
 		</plugins>
 	</build>

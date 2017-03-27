@@ -19,10 +19,6 @@
   <name>jain-sdp</name>
   <url>https://github.com/jitsi/jain-sip</url>
 
-  <properties>
-    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-  </properties>
-
   <dependencies>
     <dependency>
       <groupId>log4j</groupId>
